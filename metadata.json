@@ -1,0 +1,6 @@
+{
+  "name": "Movie Story Analyser",
+  "description": "Dataset-based NLP web application for analyzing movie storylines, summarization, explainable sentiment, emotion detection, themes, and dual-movie comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

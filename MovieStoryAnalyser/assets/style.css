@@ -1,0 +1,195 @@
+/* Movie Story Analyser - Streamlit Dark Cinematic Theme CSS */
+
+/* Global App Styling */
+.stApp {
+    background-color: #11161B;
+    color: #F1EEE8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Sidebar Customization */
+section[data-testid="stSidebar"] {
+    background-color: #1B2229 !important;
+    border-right: 1px solid #28333E;
+}
+
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    color: #F1EEE8 !important;
+}
+
+/* Metric Containers */
+div[data-testid="stMetric"] {
+    background: #161D24;
+    border: 1px solid #28333E;
+    border-radius: 10px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    border-color: #C9A47F;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #AAB1B9 !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #C9A47F !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+/* Custom Card Container */
+.movie-card {
+    background-color: #161D24;
+    border: 1px solid #28333E;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease-in-out;
+}
+
+.movie-card:hover {
+    border-color: #C9A47F;
+    box-shadow: 0 8px 24px rgba(201, 164, 127, 0.12);
+}
+
+.movie-card h3 {
+    color: #F1EEE8;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: #1B2229;
+    border: 1px solid #28333E;
+    color: #C9A47F;
+}
+
+.badge-accent {
+    background-color: rgba(201, 164, 127, 0.15);
+    border-color: #C9A47F;
+    color: #C9A47F;
+}
+
+.badge-positive {
+    background-color: rgba(78, 159, 118, 0.15);
+    border-color: #4E9F76;
+    color: #4E9F76;
+}
+
+.badge-negative {
+    background-color: rgba(217, 93, 93, 0.15);
+    border-color: #D95D5D;
+    color: #D95D5D;
+}
+
+.badge-neutral {
+    background-color: rgba(143, 157, 170, 0.15);
+    border-color: #8F9DAA;
+    color: #8F9DAA;
+}
+
+/* Sentence Highlighting in Explanations */
+.sentence-box {
+    background-color: #1B2229;
+    border-left: 3px solid #C9A47F;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.sentence-pos {
+    border-left-color: #4E9F76;
+    background-color: rgba(78, 159, 118, 0.08);
+}
+
+.sentence-neg {
+    border-left-color: #D95D5D;
+    background-color: rgba(217, 93, 93, 0.08);
+}
+
+.sentence-neu {
+    border-left-color: #8F9DAA;
+    background-color: rgba(143, 157, 170, 0.06);
+}
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #161D24;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 8px;
+    border: 1px solid #28333E;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #AAB1B9 !important;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #1B2229 !important;
+    color: #C9A47F !important;
+    border-bottom: 2px solid #C9A47F !important;
+}
+
+/* Buttons */
+button[kind="primary"], div.stButton > button:first-child {
+    background-color: #C9A47F !important;
+    color: #11161B !important;
+    border: none !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    transition: all 0.2s ease !important;
+}
+
+button[kind="primary"]:hover, div.stButton > button:first-child:hover {
+    background-color: #8D7058 !important;
+    color: #F1EEE8 !important;
+    box-shadow: 0 4px 12px rgba(201, 164, 127, 0.25) !important;
+}
+
+/* Text Inputs & Selectboxes */
+.stTextInput > div > div > input,
+.stSelectbox > div > div {
+    background-color: #161D24 !important;
+    border: 1px solid #28333E !important;
+    color: #F1EEE8 !important;
+    border-radius: 8px !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div:focus {
+    border-color: #C9A47F !important;
+    box-shadow: 0 0 0 1px #C9A47F !important;
+}
+
+/* Hide Default Streamlit Menu / Footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
